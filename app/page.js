@@ -57,10 +57,10 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <section className="review">
+      <section className="mx-7 review">
         {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
         <Script src="https://elfsightcdn.com/platform.js" async></Script>
-        <div className="mx-7 elfsight-app-d463cab9-694d-44e6-979d-a3fe7d0971bc" data-elfsight-app-lazy></div>
+        <div className="elfsight-app-d463cab9-694d-44e6-979d-a3fe7d0971bc" data-elfsight-app-lazy></div>
       </section>
 
     </>
