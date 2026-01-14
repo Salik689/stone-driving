@@ -7,7 +7,7 @@ const Page = () => {
       <main className="relative h-[75vh] w-full border-2 bg-black border-black flex flex-col items-center justify-center p-3.5">
 
         {/* Background image */}
-        <div className="absolute inset-0 bg-[url('/image/carWithLplate.webp')] bg-cover bg-center bg-no-repeat opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/image/lPlate.webp')] bg-cover bg-center bg-no-repeat opacity-20"></div>
 
         <div className="relative z-10 text-center text-white space-y-4">
           <h1 className="text-4xl font-bold">Learn, Drive, Thrive</h1>
@@ -16,6 +16,7 @@ const Page = () => {
         </div>
 
       </main>
+      
       <section className="py-12 bg-gray-50" id="whyUs">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
@@ -57,7 +58,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <section className="mx-7 review">
+      <section className="mx-7 mt-7 review">
         {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
         <Script src="https://elfsightcdn.com/platform.js" async></Script>
         <div className="elfsight-app-d463cab9-694d-44e6-979d-a3fe7d0971bc" data-elfsight-app-lazy></div>
