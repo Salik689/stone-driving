@@ -15,6 +15,7 @@ const ContactForm = () => {
       message: e.target.message.value,
     };
 
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -22,17 +23,20 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
+      
+
       const result = await res.json();
+    
 
       if (result.success) {
-        alert("Message sent successfully!");
+        alert("✅ Message sent successfully!");
         e.target.reset();
       } else {
-        alert("Failed to send message. Please try again.");
+        alert("❌ Failed to send message. " + (result.error || ""));
       }
     } catch (err) {
-      console.error(err);
-      alert("Something went wrong. Try again later.");
+      console.error("❌ Fetch error:", err);
+      alert("❌ Something went wrong. Check console.");
     } finally {
       setLoading(false);
     }

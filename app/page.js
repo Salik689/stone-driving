@@ -12,7 +12,7 @@ const Page = () => {
         <div className="relative z-10 text-center text-white space-y-4">
           <h1 className="text-4xl font-bold">Learn, Drive, Thrive</h1>
           <p className="text-lg">From your first lesson to the moment you pass your test, we’ll make driving safe, easy, and enjoyable.</p>
-          <button className="bg-orange-400/50 border-orange-400 border-2 text-white px-4 py-2 rounded mt-4 cursor-pointer"><Link href="/contact">Contact</Link></button>
+          <button className="bg-orange-400/50 border-orange-400 border-2 text-white px-4 py-2 rounded mt-4 cursor-pointer"><Link href="/contact">Get started</Link></button>
         </div>
 
       </main>
