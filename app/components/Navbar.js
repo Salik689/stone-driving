@@ -25,12 +25,20 @@ const Navbar = () => {
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <button className=" menuBtns menu-openBtn" onClick={toggleMenu} >
-         <Image src="/image/ui/menu.png" alt="menu" width={50} height={50} />
+        <button className=" menuBtns menu-openBtn inline-flex items-center justify-center 
+            text-orange-500 text-3xl font-bold 
+            w-12 h-12 rounded-lg cursor-pointer select-none
+            hover:bg-orange-500/10 hover:text-orange-600
+            transition-all duration-200 " onClick={toggleMenu} >
+          ☰
         </button>
         <nav ref={menuRef} className={` mobile-nav ${menu ? 'open-menu' : 'close-menu'}`}>
-          <button className=" menuBtns menu-closeBtn" onClick={toggleMenu} >
-            <Image src="/image/ui/close.png" alt="menu" width={50} height={50} />
+          <button className=" menuBtns menu-closeBtn inline-flex items-center justify-center 
+            text-orange-500 text-3xl font-bold 
+            w-12 h-12 rounded-lg cursor-pointer select-none
+            hover:bg-orange-500/10 hover:text-orange-600
+            transition-all duration-200 " onClick={toggleMenu} >
+            ✕
           </button>
           <ul>
             <li><a href="/">Home</a></li>

@@ -77,11 +77,10 @@ header {
         display: block;
         position: absolute;
         right: 12px;
+         top: 10px;
     }
 
-    .menu-closeBtn {
-        top: 10px;
-    }
+    
 
     .mobile-nav.open-menu {
         transform: translateX(0);
