@@ -7,7 +7,7 @@ const Page = () => {
       <main className="relative h-[75vh] w-full border-2 bg-black border-black flex flex-col items-center justify-center p-3.5">
 
         {/* Background image */}
-        <div className="absolute inset-0 bg-[url('/image/lPlate.webp')] bg-cover bg-center bg-no-repeat opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/image/l_to_p.png')] bg-cover bg-center bg-no-repeat opacity-20"></div>
 
         <div className="relative z-10 text-center text-white space-y-4">
           <h1 className="text-4xl font-bold">Learn, Drive, Thrive</h1>
