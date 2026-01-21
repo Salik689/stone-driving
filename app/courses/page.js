@@ -1,67 +1,90 @@
 "use client";
 import Link from "next/link";
 
-export default function Courses() {
+export default function CoursesPage() {
   const courses = [
-    { name: "Driving Course", price: "£100", description: "Practical driving lessons" },
-    { name: "Theory Course", price: "£20", description: "Learn the rules of the road" },
-    { name: "Advanced Driving", price: "£150", description: "For experienced drivers" },
-  ];
-
-  const videos = [
-    { title: "Driving Tips", url: "https://www.youtube.com/embed/1gkF9hQ9J2E" },
-    { title: "Theory Practice", url: "https://www.youtube.com/embed/2xZ5Rz4CkxU" },
-    { title: "Advanced Techniques", url: "https://www.youtube.com/embed/3kljvR0abc0" },
+    {
+      name: "Beginner Driving",
+      price: "£100",
+      description: "Perfect for first-time drivers. Covers basics and confidence building.",
+      features: ["Manual & Automatic", "Certified Instructors", "Flexible Timing"],
+    },
+    {
+      name: "Theory Test Prep",
+      price: "£20",
+      description: "Everything you need to pass your theory test first time.",
+      features: ["Mock Tests", "Road Signs", "Hazard Perception"],
+    },
+    {
+      name: "Advanced Driving",
+      price: "£150",
+      description: "For experienced drivers looking to improve skills and safety.",
+      features: ["Motorway Driving", "Night Driving", "Eco Driving"],
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
-      <header className="text-center py-12 bg-gray-100">
-        <h1 className="text-4xl md:text-5xl font-bold text-orange-500">Our Courses</h1>
-        <p className="mt-4 text-gray-600">Choose a course and learn at your pace</p>
-      </header>
+    <main className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Hero */}
+      <section className="bg-gray-100 py-16 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-orange-500">
+          Driving School Courses
+        </h1>
+        <p className="mt-4 max-w-2xl mx-auto text-gray-600">
+          Learn to drive safely and confidently with our professional instructors.
+        </p>
+      </section>
 
-      {/* Pricing Table */}
-      <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+      {/* Courses */}
+      <section className="max-w-7xl mx-auto px-6 py-16 grid gap-8 md:grid-cols-3">
         {courses.map((course) => (
-          <div key={course.name} className="bg-white rounded-xl shadow-lg p-6 flex flex-col justify-between hover:shadow-2xl transition">
-            <h2 className="text-xl font-semibold mb-2">{course.name}</h2>
-            <p className="text-gray-500 mb-4">{course.description}</p>
-            <p className="text-3xl font-bold text-orange-500">{course.price}</p>
+          <div
+            key={course.name}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition flex flex-col"
+          >
+            <div className="p-6 flex-1">
+              <h2 className="text-2xl font-bold mb-2">{course.name}</h2>
+              <p className="text-gray-500 mb-4">{course.description}</p>
+
+              <ul className="space-y-2 mb-6">
+                {course.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-2 text-sm">
+                    <span className="text-orange-500 font-bold">✓</span>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="p-6 border-t flex items-center justify-between">
+              <span className="text-3xl font-extrabold text-orange-500">
+                {course.price}
+              </span>
+              <Link href="/contact">
+                <button className="bg-gray-800 text-orange-500 px-5 py-2 rounded-full font-semibold hover:bg-gray-900 transition">
+                  Enrol
+                </button>
+              </Link>
+            </div>
           </div>
         ))}
       </section>
 
-      {/* Learn More Videos */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Learn More</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {videos.map((video) => (
-            <div key={video.title} className="rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                className="w-full h-64 md:h-48"
-                src={video.url}
-                title={video.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="p-4 bg-white">
-                <h3 className="font-semibold text-gray-800">{video.title}</h3>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Call to Action */}
+      <section className="bg-gray-800 py-16 text-center px-6">
+        <h2 className="text-3xl font-bold text-white">
+          Ready to Start Driving?
+        </h2>
+        <p className="mt-3 text-gray-300 max-w-xl mx-auto">
+          Contact us today and book your first lesson with confidence.
+        </p>
 
-      {/* Contact Button */}
-      <section className="text-center py-12">
         <Link href="/contact">
-          <button className="bg-gray-800 text-orange-500 font-bold py-3 px-8 rounded-full hover:bg-gray-900 transition">
+          <button className="mt-6 bg-orange-500 text-gray-900 px-8 py-3 rounded-full font-bold hover:bg-orange-400 transition">
             Contact Us
           </button>
         </Link>
       </section>
-    </div>
+    </main>
   );
 }
