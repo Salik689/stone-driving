@@ -11,12 +11,11 @@ const Navbar = () => {
 
   function toggleMenu() {
     setmenu(!menu)
-
   }
   return (
     <>
       <header className=' backdrop-blur-md bg-white/10 shadow-md' >
-        <div className="logo"><Image src="/image/logo.png" alt="Logo" width={75} height={75} /></div>
+        <div className="logo"><a href="/"><Image src="/image/logo.png" alt="Logo" width={75} height={75} /></a></div>
         <nav className='desktop-nav' >
           <ul>
             <li><a href="/">Home</a></li>
