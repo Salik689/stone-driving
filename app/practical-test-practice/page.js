@@ -61,7 +61,7 @@ const page = () => {
       <section className="mx-auto max-w-4xl px-5 pb-16 space-y-10">
         {/* Show me tell me */}
         <section className="space-y-4">
-          <h2 className="font-bold text-2xl">‘Show me, tell me’ questions</h2>
+          <h2 className="font-bold text-2xl"><Link className="text-blue-600 underline hover:text-blue-800" href="/show-me-tell-me">‘Show me, tell me’</Link> questions</h2>
           <p>You’ll be asked the:</p>
           <ul className="list-disc list-inside space-y-2">
             <li>‘tell me’ question at the start of your test, before you start driving</li>
