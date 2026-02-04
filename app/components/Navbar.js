@@ -4,6 +4,7 @@ import './Navbar.css';
 import { useState } from 'react';
 import { useRef } from "react";
 import Image from 'next/image';
+import Dropdown from './Dropdown';
 
 const Navbar = () => {
   const [menu, setmenu] = useState(false)
@@ -17,11 +18,12 @@ const Navbar = () => {
       <header className=' backdrop-blur-md bg-white/10 shadow-md' >
         <div className="logo"><a href="/"><Image src="/image/logo.png" alt="Logo" width={75} height={75} /></a></div>
         <nav className='desktop-nav' >
-          <ul>
+          <ul className='ul' >
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/courses">Courses</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><Dropdown /></li>
           </ul>
         </nav>
         <button className=" menuBtns menu-openBtn inline-flex items-center justify-center 
@@ -39,11 +41,12 @@ const Navbar = () => {
             transition-all duration-200 " onClick={toggleMenu} >
             ✕
           </button>
-          <ul>
+          <ul className='ul' >
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/courses">Courses</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><Dropdown /></li>
           </ul>
         </nav>
       </header>

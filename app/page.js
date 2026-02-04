@@ -4,13 +4,13 @@ import Script from 'next/script'
 const Page = () => {
   return (
     <>
-      <main className="relative h-[75vh] w-full border-2 bg-black border-black flex flex-col items-center justify-center p-3.5">
+      <main className="relative h-[73vh] w-full border-2 bg-black border-black flex flex-col items-center justify-center p-3.5">
 
         {/* Background image */}
-        <div className="absolute inset-0 bg-[url('/image/l_to_p.png')] bg-cover bg-center bg-no-repeat opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/image/logo-full-bg.jpg')] bg-cover bg-center bg-no-repeat opacity-20"></div>
 
         <div className="relative z-10 text-center text-white space-y-4">
-          <h1 className="text-4xl font-bold">Learn, Drive, Thrive</h1>
+          <h1 className=" text-[clamp(1.5rem,4vw,3rem)] font-bold">Learn, Drive, Thrive</h1>
           <p className="text-lg">From your first lesson to the moment you pass your test, we’ll make driving safe, easy, and enjoyable.</p>
           <button className="bg-orange-400/50 border-orange-400 border-2 text-white px-4 py-2 rounded mt-4 cursor-pointer"><Link href="/contact">Get started</Link></button>
         </div>
