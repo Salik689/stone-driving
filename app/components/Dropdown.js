@@ -1,5 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 
 export default function Dropdown() {
   const [open, setOpen] = useState(false);
@@ -33,7 +34,10 @@ export default function Dropdown() {
         <div className="absolute left-0 mt-2 w-40 rounded-lg border border-gray-200 bg-white shadow-lg">
           <ul className="flex flex-col py-1 text-sm text-gray-700">
             <li className="cursor-pointer px-4 py-2 hover:bg-gray-100">
-              Show me. Tell me.
+              <Link href="/practical-test-practice">Practical Test Practice</Link>
+            </li>
+            <li className="cursor-pointer px-4 py-2 hover:bg-gray-100">
+              Theory Test Practice
             </li>
             <li className="cursor-pointer px-4 py-2 hover:bg-gray-100">
               Videos

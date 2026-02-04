@@ -1,13 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import Script from 'next/script'
+
 const Page = () => {
   return (
     <>
       <main className="relative h-[73vh] w-full border-2 bg-black border-black flex flex-col items-center justify-center p-3.5">
 
         {/* Background image */}
-        <div className="absolute inset-0 bg-[url('/image/logo-full-bg.jpg')] bg-cover bg-center bg-no-repeat opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/image/logo-full-bg.jpg')] bg-cover bg-center bg-no-repeat opacity-40"></div>
 
         <div className="relative z-10 text-center text-white space-y-4">
           <h1 className=" text-[clamp(1.5rem,4vw,3rem)] font-bold">Learn, Drive, Thrive</h1>
