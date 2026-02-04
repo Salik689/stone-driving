@@ -47,23 +47,23 @@ export default function Dropdown() {
                             <Link href="/show-me-tell-me">Show me, Tell me</Link>
                         </li>
                         <li className="pl-8 py-1 hover:bg-gray-50">
-                            <Link href="/videos">Videos</Link>
+                            <Link href="#">Videos</Link>
                         </li>
 
                         {/* Theory Test Practice */}
                         <li className="px-4 py-2 hover:bg-gray-100 font-semibold">
-                            <Link href="/theory-test-practice">Theory Test Practice</Link>
+                            <Link href="#">Theory Test Practice</Link>
                         </li>
                         <li className="pl-8 py-1 hover:bg-gray-50">
-                            <Link href="/multiple-choice">Multiple Choice Questions</Link>
+                            <Link href="#">Multiple Choice Questions</Link>
                         </li>
                         <li className="pl-8 py-1 hover:bg-gray-50">
-                            <Link href="/hazard-perception">Hazard Perception Videos</Link>
+                            <Link href="#">Hazard Perception Videos</Link>
                         </li>
 
                         {/* Other */}
                         <li className="px-4 py-2 hover:bg-gray-100 font-semibold">
-                            <Link href="/other-resources">Other</Link>
+                            <Link href="#">Other</Link>
                         </li>
                     </ul>
                 </div>
