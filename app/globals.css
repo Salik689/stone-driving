@@ -11,3 +11,19 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* background img on home page */
+.hero-bg{
+  position: absolute;
+  inset: 0;
+  background-image: url("/image/licenceWithLogo3.png");
+  background-position: right !important; 
+  background-repeat:no-repeat ;
+  opacity: 90;
+  background-size:cover ;
+}
+/* @media (min-width: 490px) {
+.hero-bg-mobile{
+background-position:center ;
+}
+} */

@@ -18,7 +18,7 @@ const Navbar = () => {
       <header className=' backdrop-blur-md bg-white/10 shadow-md' >
         <div className="logo"><a href="/"><Image src="/image/logo.png" alt="Logo" width={75} height={75} /></a></div>
         <nav className='desktop-nav' >
-          <ul className='ul' >
+          <ul className='ul ' >
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/courses">Courses</a></li>
@@ -41,7 +41,7 @@ const Navbar = () => {
             transition-all duration-200 " onClick={toggleMenu} >
             ✕
           </button>
-          <ul className='ul' >
+          <ul className='ul font-bold' >
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/courses">Courses</a></li>

@@ -20,9 +20,9 @@ const page = () => {
 
             <div className="flex justify-center  md:justify-center mt-8">
                 <Image
-                    src="/image/owner.png" // put your image in /public folder
+                    src="/image/owner1.png" // put your image in /public folder
                     alt="Owner of Stone Driving School"
-                    className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full shadow-lg border-4 border-orange-600"
+                    className="w-40 h-45 md:w-37 md:h-45 sm:w-37 object-cover rounded- shadow-lg border-4 border-orange-600"
                     width={100}
                     height={100}
                 />
