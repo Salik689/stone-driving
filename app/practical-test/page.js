@@ -2,7 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Practical Test - Stone Driving School",
+  description: "Learn about the practical driving test process, including what to expect during the test, how long it lasts, and tips for success. Prepare for your driving test with confidence at Stone Driving School.",
+};
+
 const page = () => {
+
   return (
     <>
       <main className="mx-auto max-w-5xl px-6 py-16 space-y-12">

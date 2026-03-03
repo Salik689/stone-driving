@@ -1,5 +1,10 @@
 import React from "react";
 
+export const metadata = {
+  title: "Show me, tell me questions - Stone Driving School",
+  description: "Learn about the 'show me, tell me' questions asked during the UK practical driving test, including examples of common questions and tips for preparing. Get ready for your driving test with confidence at Stone Driving School.",
+};
+
 const page = () => {
   return (
     <>
@@ -114,43 +119,43 @@ const page = () => {
           </div>
         </section>
         <section className="show-me-questions mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12 space-y-8">
-  <h2 className="text-orange-600 text-2xl sm:text-3xl font-bold border-b border-gray-300 pb-2 sm:pb-3 mb-6">
-    ‘Show me’ questions
-  </h2>
+          <h2 className="text-orange-600 text-2xl sm:text-3xl font-bold border-b border-gray-300 pb-2 sm:pb-3 mb-6">
+            ‘Show me’ questions
+          </h2>
 
-  <ul className="space-y-4">
-    {[
-      "When it’s safe to do so, can you show me how you wash and clean the rear windscreen?",
-      "When it’s safe to do so, can you show me how you wash and clean the front windscreen?",
-      "When it’s safe to do so, can you show me how you’d switch on your dipped headlights?",
-      "When it’s safe to do so, can you show me how you’d set the rear demister?",
-      "When it’s safe to do so, can you show me how you’d operate the horn?",
-      "When it’s safe to do so, can you show me how you’d demist the front windscreen?",
-      "When it’s safe to do so, can you show me how you’d open and close the side window?"
-    ].map((question, idx) => (
-      <li
-        key={idx}
-        className="bg-white border border-gray-200 rounded-lg p-4 sm:p-5 shadow-sm text-gray-800 text-base sm:text-lg hover:shadow-md transition-shadow duration-200"
-      >
-        {question}
-      </li>
-    ))}
-  </ul>
-<div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-  <div className="relative w-full aspect-video">
-    <iframe
-      className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-      src="https://www.youtube.com/embed/damj01nXcZU"
-      title="'Show me, tell me': show me questions 2025: official DVSA guide"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allowFullScreen
-    ></iframe>
-  </div>
-</div>
+          <ul className="space-y-4">
+            {[
+              "When it’s safe to do so, can you show me how you wash and clean the rear windscreen?",
+              "When it’s safe to do so, can you show me how you wash and clean the front windscreen?",
+              "When it’s safe to do so, can you show me how you’d switch on your dipped headlights?",
+              "When it’s safe to do so, can you show me how you’d set the rear demister?",
+              "When it’s safe to do so, can you show me how you’d operate the horn?",
+              "When it’s safe to do so, can you show me how you’d demist the front windscreen?",
+              "When it’s safe to do so, can you show me how you’d open and close the side window?"
+            ].map((question, idx) => (
+              <li
+                key={idx}
+                className="bg-white border border-gray-200 rounded-lg p-4 sm:p-5 shadow-sm text-gray-800 text-base sm:text-lg hover:shadow-md transition-shadow duration-200"
+              >
+                {question}
+              </li>
+            ))}
+          </ul>
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+            <div className="relative w-full aspect-video">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/damj01nXcZU"
+                title="'Show me, tell me': show me questions 2025: official DVSA guide"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
 
-</section>
+        </section>
 
       </main>
     </>

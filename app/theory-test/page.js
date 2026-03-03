@@ -1,71 +1,76 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Theory Test - Stone Driving School",
+  description: "Learn about the UK driving theory test, including what to expect during the test, how long it lasts, and tips for success. Prepare for your theory test with confidence at Stone Driving School.",
+};
+
 const page = () => {
     return (
         <main className="min-h-screen bg-gray-50 text-gray-900">
-           <div className="mx-auto max-w-5xl px-6 py-16 space-y-16">
+            <div className="mx-auto max-w-5xl px-6 py-16 space-y-16">
 
-  {/* Title */}
-  <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-extrabold text-center text-black leading-tight">
-      What happens during the Theory Test
-  </h1>
+                {/* Title */}
+                <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-extrabold text-center text-black leading-tight">
+                    What happens during the Theory Test
+                </h1>
 
-  {/* Theory Info Section */}
-  <section className="bg-white p-8 rounded-2xl shadow-lg space-y-6 border border-gray-200">
-      <p className="text-lg text-gray-700 leading-relaxed">
-          The multiple-choice questions in the UK driving theory test cover 3 main sources:
-      </p>
+                {/* Theory Info Section */}
+                <section className="bg-white p-8 rounded-2xl shadow-lg space-y-6 border border-gray-200">
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                        The multiple-choice questions in the UK driving theory test cover 3 main sources:
+                    </p>
 
-      <ul className="list-disc list-inside space-y-3 text-lg text-gray-700 leading-relaxed ml-4">
-          <li>The Highway Code</li>
-          <li>Know Your Traffic Signs</li>
-          <li>Driving: The Essential Skills</li>
-      </ul>
+                    <ul className="list-disc list-inside space-y-3 text-lg text-gray-700 leading-relaxed ml-4">
+                        <li>The Highway Code</li>
+                        <li>Know Your Traffic Signs</li>
+                        <li>Driving: The Essential Skills</li>
+                    </ul>
 
-      {/* Hazard Perception */}
-      <div className="mt-6 space-y-2">
-          <h2 className="text-2xl font-bold text-black">Hazard Perception</h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-              You will watch 14 video clips showing everyday road situations. Each clip contains at least one developing hazard.  
-              You must click as soon as you see a potential hazard. Scoring depends on how quickly you respond.
-          </p>
-      </div>
+                    {/* Hazard Perception */}
+                    <div className="mt-6 space-y-2">
+                        <h2 className="text-2xl font-bold text-black">Hazard Perception</h2>
+                        <p className="text-gray-700 text-lg leading-relaxed">
+                            You will watch 14 video clips showing everyday road situations. Each clip contains at least one developing hazard.
+                            You must click as soon as you see a potential hazard. Scoring depends on how quickly you respond.
+                        </p>
+                    </div>
 
-      {/* Multiple Choice Section */}
-      <div className="mt-6 space-y-2">
-          <h2 className="text-2xl font-bold text-black">Multiple Choice Questions</h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-              There are 50 questions, and you need at least 43 correct to pass. Questions are randomly selected and cover:
-          </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li>Rules of the road and road signs</li>
-              <li>Safety and vehicle handling</li>
-              <li>Environmental and hazard awareness</li>
-              <li>Driver responsibilities and laws</li>
-          </ul>
-      </div>
+                    {/* Multiple Choice Section */}
+                    <div className="mt-6 space-y-2">
+                        <h2 className="text-2xl font-bold text-black">Multiple Choice Questions</h2>
+                        <p className="text-gray-700 text-lg leading-relaxed">
+                            There are 50 questions, and you need at least 43 correct to pass. Questions are randomly selected and cover:
+                        </p>
+                        <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li>Rules of the road and road signs</li>
+                            <li>Safety and vehicle handling</li>
+                            <li>Environmental and hazard awareness</li>
+                            <li>Driver responsibilities and laws</li>
+                        </ul>
+                    </div>
 
-      {/* Tips */}
-      <div className="mt-6 space-y-2">
-          <h2 className="text-2xl font-bold text-black">Tips for Passing</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li>Read questions carefully and check all options before answering</li>
-                <li>Use the process of elimination to narrow down choices</li>
-              <li>Stay calm and manage your time; you have 57 minutes for 50 multiple-choice questions</li>
-          </ul>
-      </div>
+                    {/* Tips */}
+                    <div className="mt-6 space-y-2">
+                        <h2 className="text-2xl font-bold text-black">Tips for Passing</h2>
+                        <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li>Read questions carefully and check all options before answering</li>
+                            <li>Use the process of elimination to narrow down choices</li>
+                            <li>Stay calm and manage your time; you have 57 minutes for 50 multiple-choice questions</li>
+                        </ul>
+                    </div>
 
-      {/* Scoring */}
-      <div className="mt-6 space-y-2">
-          <h2 className="text-2xl font-bold text-black">Scoring</h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-              The multiple-choice section is scored out of 50, and the hazard perception section is scored out of 75.  
-              You must pass both parts to pass the theory test.
-          </p>
-      </div>
-  </section>
-</div>
+                    {/* Scoring */}
+                    <div className="mt-6 space-y-2">
+                        <h2 className="text-2xl font-bold text-black">Scoring</h2>
+                        <p className="text-gray-700 text-lg leading-relaxed">
+                            The multiple-choice section is scored out of 50, and the hazard perception section is scored out of 75.
+                            You must pass both parts to pass the theory test.
+                        </p>
+                    </div>
+                </section>
+            </div>
             {/* Stone Driving School App Section */}
             <section className="bg-orange-50 p-8 rounded-2xl shadow-lg space-y-10 border border-orange-200">
 

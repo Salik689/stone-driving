@@ -1,9 +1,14 @@
-"use client";
 
 import Link from 'next/link'
 import Script from 'next/script'
 import React from 'react'
 import Title from './components/Title'
+
+export const metadata = {
+  title: "Stone Driving School",
+  description: "Learn to drive with confidence at Stone Driving School. Expert instructors, flexible scheduling, and a high pass rate.",
+};
+
 const Page = () => {
   return (
     <>

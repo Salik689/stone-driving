@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "About The In Stone Driving School",
+  description: "Learn to drive with confidence at Stone Driving School. Expert instructors, flexible scheduling, and a high pass rate.",
+};
+
 const page = () => {
     return (
         <main className="min-h-screen bg-gray-50 text-gray-800">
