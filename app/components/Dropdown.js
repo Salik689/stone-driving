@@ -35,7 +35,7 @@ const Dropdown = () => {
           <a href="/show-me-tell-me" className="block px-4 py-2 hover:bg-gray-100">
             Show me, tell me
           </a>
-          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+          <a href="/theory-test" className="block px-4 py-2 hover:bg-gray-100">
             Theory Test
           </a>
         </div>
