@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 const page = () => {
   return (
     <>
@@ -49,7 +49,7 @@ const page = () => {
             <li>20 metres for vehicles with a new-style number plate</li>
             <li>20.5 metres for vehicles with an old-style number plate</li>
           </ul>
-
+<Image src="/image/20-meter.png" alt="Number plates" width={400} height={200} className="rounded-lg border-l-4 border-gray-400 bg-gray-50 p-4 text-sm" />
           <div className="rounded-lg border-l-4 border-blue-500 bg-blue-50 p-4 text-sm">
             New-style number plates start with 2 letters followed by 2 numbers,
             such as AB51 ABC.
@@ -61,7 +61,7 @@ const page = () => {
       <section className="mx-auto max-w-4xl px-5 pb-16 space-y-10">
         {/* Show me tell me */}
         <section className="space-y-4">
-          <h2 className="font-bold text-2xl"><Link className="text-blue-600 underline hover:text-blue-800" href="/show-me-tell-me">‘Show me, tell me’</Link> questions</h2>
+          <h2 className="font-bold text-2xl"><Link className="text-blue-600 underline hover:text-blue-800" href="/show-me-tell-me">‘Show me, tell me 🔗’</Link> questions</h2>
           <p>You’ll be asked the:</p>
           <ul className="list-disc list-inside space-y-2">
             <li>‘tell me’ question at the start of your test, before you start driving</li>
@@ -95,6 +95,7 @@ const page = () => {
             If you cannot see a traffic sign (for example, because it’s covered by trees),
             the examiner will give you directions until you can see the next one.
           </p>
+          <Image src="/image/sign-blocked.webp" alt="Traffic signs" width={400} height={200} className="rounded-lg border-l-4 border-gray-400 bg-gray-50 p-4 text-sm" />
         </section>
 
         <section className="space-y-3">
@@ -147,13 +148,16 @@ const page = () => {
 
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>parallel park at the side of the road</li>
+          <Image src="/image/parallel-parking.png" alt="parallel park at the side of the road" width={400} height={200} className="rounded-lg border-l-4 border-gray-400 bg-gray-50 p-4 text-sm" />
             <li>
               park in a parking bay – either by driving in and reversing out, or
-              reversing in and driving out
+              reversing in and driving 
+              <Image src="/image/bay-parking-turn-approach.jpg" alt="park in a parking bay – either by driving in and reversing out, or reversing in and driving" width={400} height={200} className="rounded-lg border-l-4 border-gray-400 bg-gray-50 p-4 text-sm" />
             </li>
             <li>
               pull up on the right-hand side of the road, reverse for around 2 car
               lengths, and rejoin the traffic
+              <Image src="/image/manoeuvre.jpg" alt="pull up on the right-hand side of the road, reverse for around 2 car lengths, and rejoin the traffic" width={400} height={200} className="rounded-lg border-l-4 border-gray-400 bg-gray-50 p-4 text-sm" />
             </li>
           </ul>
         </section>

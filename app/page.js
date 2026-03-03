@@ -11,7 +11,7 @@ const Page = () => {
   {/* Background image */}
   <div className="hero-bg hero-bg-mobile "></div>
   {/* Overlay for subtle dark effect */}
-  <div className="absolute inset-0 bg-black/30"></div>
+  <div className="absolute inset-0 bg-black/25"></div>
 
  
   {/* Hero content */}

@@ -5,19 +5,16 @@ export default function CoursesPage() {
   const courses = [
     {
       name: "Beginner Driving",
-      price: "£100",
       description: "Perfect for first-time drivers. Covers basics and confidence building.",
       features: ["Manual & Automatic", "Certified Instructors", "Flexible Timing"],
     },
     {
       name: "Theory Test Prep",
-      price: "£20",
       description: "Everything you need to pass your theory test first time.",
       features: ["Mock Tests", "Road Signs", "Hazard Perception"],
     },
     {
       name: "Advanced Driving",
-      price: "£150",
       description: "For experienced drivers looking to improve skills and safety.",
       features: ["Motorway Driving", "Night Driving", "Eco Driving"],
     },
@@ -56,16 +53,7 @@ export default function CoursesPage() {
               </ul>
             </div>
 
-            <div className="p-6 border-t flex items-center justify-between">
-              <span className="text-3xl font-extrabold text-orange-500">
-                {course.price}
-              </span>
-              <Link href="/contact">
-                <button className="bg-gray-800 text-orange-500 px-5 py-2 rounded-full font-semibold hover:bg-gray-900 transition">
-                  Enrol
-                </button>
-              </Link>
-            </div>
+            
           </div>
         ))}
       </section>

@@ -16,14 +16,18 @@ body {
 .hero-bg{
   position: absolute;
   inset: 0;
-  background-image: url("/image/licenceWithLogo3.png");
-  background-position: right !important; 
+  background-image: url("/image/card-logo.png");
+  background-position: top !important; 
   background-repeat:no-repeat ;
-  opacity: 90;
+  opacity: 100;
   background-size:cover ;
 }
-/* @media (min-width: 490px) {
-.hero-bg-mobile{
-background-position:center ;
+
+
+@media (max-width: 756px) {
+.hero-bg{
+  background-image: url("/image/card-mobile-logo.png");
+    background-position: bottom !important; 
 }
-} */
+
+}

@@ -53,17 +53,11 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
                         <p className="text-sm">📍 Huddersfield HD3</p>
-                        <p className="text-sm mt-2">
-                            📞{" "}
-                            <a
-                                href="tel:07739 091738"
-                                className="hover:text-orange-400 transition"
-                            >
-                                077390 91738
-                            </a>
+                         <p className="text-sm mt-2">
+                            <Link className='btn sms'
+                                href={`sms:+447775609825`}>💬 SMS</Link>
                         </p>
-
-                        <p className="text-sm mt-2">✉ info@stonedrivingschool.co.uk</p>
+                        <p className="text-sm  mt-2">✉ info@stonedrivingschool.co.uk</p>
                     </div>
 
                 </div>
