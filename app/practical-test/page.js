@@ -221,6 +221,20 @@ const page = () => {
             Your driving examiner will only stop your test if they think your driving
             is a danger to other road users.
           </p>
+
+          <p className="text-gray-700">There are 3 types of faults you can make:</p>
+
+          <ul className="list-disc list-inside space-y-2 text-gray-700 ml-5">
+            <li>a dangerous fault - this involves actual danger to you, the examiner, the public or property</li>
+            <li>a serious fault - something potentially dangerous</li>
+            <li>a driving fault - this is not potentially dangerous, but if you keep making the same fault, it could become a serious fault</li>
+          </ul>
+          <h2 className="font-bold text-xl text-gray-900">Pass mark</h2>
+          <p className="text-gray-700">You&apos;ll pass your driving test if you make:</p>
+          <ul className="list-disc list-inside space-y-2 text-gray-700 ml-5">
+            <li>no more than 15 driving faults (sometimes called minors)</li>
+            <li>no serious or dangerous faults (sometimes called majors)</li>
+          </ul>
         </section>
 
         {/* Other people */}
