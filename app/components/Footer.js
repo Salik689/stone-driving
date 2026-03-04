@@ -55,11 +55,11 @@ const Footer = () => {
                         <p className="text-sm">📍 Huddersfield HD3</p>
                          <p className="text-sm mt-2">
                             <Link className='btn sms'
-                                href={`sms:+447775609825`}>💬 SMS</Link>
+                                href={`sms:+447739091738`}>💬 SMS</Link>
                         </p>
-                        <p className="text-sm  mt-2">✉ info@stonedrivingschool.co.uk</p>
+                        <p className="text-sm mt-2">✉ StoneDrivingSchool@gmail.com</p>
                     </div>
-
+{/* 07739091738 */}
                 </div>
 
                 {/* Bottom bar */}
