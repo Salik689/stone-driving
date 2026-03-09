@@ -16,18 +16,18 @@ body {
 .hero-bg{
   position: absolute;
   inset: 0;
-  background-image: url("/image/card-logo.png");
-  background-position: top !important; 
+  background-image: url("/image/countryside_road_logo_middle.png");
+  background-position: center !important; 
   background-repeat:no-repeat ;
   opacity: 100;
   background-size:cover ;
 }
 
 
-@media (max-width: 756px) {
+@media (max-width: 500px) {
 .hero-bg{
-  background-image: url("/image/card-mobile-logo.png");
-    background-position: bottom !important; 
+  background-image: url("/image/countryside_road_logo_mobile.png");
+    background-position: center !important; 
 }
 
 }
