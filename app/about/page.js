@@ -8,6 +8,7 @@ export const metadata = {
 
 const page = () => {
     return (
+        <>
         <main className="min-h-screen bg-gray-50 text-gray-800">
 
             {/* Hero */}
@@ -88,6 +89,56 @@ const page = () => {
                 </div>
             </section>
         </main>
+        <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+  <div className="max-w-4xl mx-auto text-center px-6">
+
+    <h2 className="text-3xl font-bold text-gray-900 mb-3">
+      Follow Stone Driving School
+    </h2>
+
+    <p className="text-gray-500 mb-8">
+      Stay updated with tips, lessons, and student success stories.
+    </p>
+
+    <div className="flex justify-center gap-6">
+
+      {/* Facebook */}
+      <a
+        href="https://www.facebook.com/share/1CJ1Vr851c/"
+        target="_blank"
+        className="group w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M22 12A10 10 0 1 0 10.2 21.9v-7h-2.4v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.3h-1.2c-1.2 0-1.6.8-1.6 1.5v1.9h2.7l-.4 2.9H13v7A10 10 0 0 0 22 12z" />
+        </svg>
+      </a>
+
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/stonedrivingschool"
+        target="_blank"
+        className="group w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-gray-700 group-hover:text-pink-500 transition"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm4.25 5.5A4.75 4.75 0 1 0 16.75 12 4.75 4.75 0 0 0 12 7.5zm6-1.75a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 18 5.75z"/>
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+        </>
     );
 };
 

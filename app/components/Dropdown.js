@@ -23,7 +23,7 @@ const Dropdown = () => {
     <div className="relative inline-block mr-1 w-50 text-center">
       <details className="Dropdown-wrapper" ref={dropdownRef}>
         <summary className="list-none cursor-pointer px-4 py-2 bg-white border border-amber-600 rounded-md shadow-sm hover:bg-gray-50 flex items-center gap-1 flex-row text justify-center">
-          Resourses
+          Resources
           <DownArrowSVG className="in" />
         </summary>
 

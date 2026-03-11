@@ -12,28 +12,28 @@ export const metadata = {
 const Page = () => {
   return (
     <>
-    <main className="relative h-[80vh] w-full flex flex-col items-center justify-center overflow-hidden">
-  {/* Background image */}
-  <div className="hero-bg hero-bg-mobile "></div>
-  {/* Overlay for subtle dark effect */}
-  <div className="absolute inset-0 bg-black/25"></div>
+      <main className="relative h-[80vh] w-full flex flex-col items-center justify-center overflow-hidden">
+        {/* Background image */}
+        <div className="hero-bg hero-bg-mobile "></div>
+        {/* Overlay for subtle dark effect */}
+        <div className="absolute inset-0 bg-black/25"></div>
 
- 
-  {/* Hero content */}
-  <div className="relative z-10 text-center px-4 sm:px-6 md:px-0 max-w-2xl space-y-4">
-    <Title/>
-    <p className="text-lg sm:text-xl text-white/90">
-      Learn smart, pass your test faster, and enjoy the journey behind the wheel.
-    </p>
-    <div className="mt-6">
-      <Link href="/contact">
-        <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition duration-300">
-          Get Started
-        </button>
-      </Link>
-    </div>
-  </div>
-</main>
+
+        {/* Hero content */}
+        <div className="relative z-10 text-center px-4 sm:px-6 md:px-0 max-w-2xl space-y-4">
+          <Title />
+          <p className="text-lg sm:text-xl text-white/90 leading-relaxed max-w-xl mx-auto drop-shadow-md font-medium">
+            Learn smart, pass your test faster, and enjoy the journey behind the wheel.
+          </p>
+          <div className="mt-6">
+            <Link href="/contact">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition duration-300">
+                Get Started
+              </button>
+            </Link>
+          </div>
+        </div>
+      </main>
 
       <section className="py-12 bg-gray-50" id="whyUs">
         <div className="max-w-6xl mx-auto px-4">
