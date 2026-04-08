@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ================= Meta ================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Stone Driving School</title>
+
+  <meta name="description"
+    content="Learn to drive with confidence at Stone Driving School. Expert instructors, flexible scheduling, and a high pass rate.">
+
+  <!-- ================= Tailwind ================= -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ================= Custom CSS ================= -->
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+
+  <!-- ================= Navbar (Injected via JS) ================= -->
+  <div id="navbar"></div>
+
+  <!-- ============================================================ -->
+  <!-- ======================= HERO SECTION ======================== -->
+  <!-- ============================================================ -->
+
+  <main
+    class="relative h-[80vh] w-full flex flex-col items-center justify-center overflow-hidden bg-[url('images/countryside_road_logo_middle.png')] bg-cover bg-center">
+
+    <!-- Background helper div (if used in CSS) -->
+    <div class="hero-bg hero-bg-mobile"></div>
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/25"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center px-4 sm:px-6 md:px-0 max-w-2xl space-y-4">
+
+      <!-- Title injected by JS -->
+      <div class="title w-full flex justify-center mt-12"></div>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-xl text-white/90 leading-relaxed max-w-xl mx-auto drop-shadow-md font-medium">
+        Learn smart, pass your test faster, and enjoy the journey behind the wheel.
+      </p>
+
+      <!-- CTA Button -->
+      <div class="mt-6">
+        <Link href="/contact">
+          <button
+            class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition duration-300">
+            Get Started
+          </button>
+        </Link>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- =================== WHY CHOOSE US =========================== -->
+  <!-- ============================================================ -->
+
+  <section class="py-12 bg-gray-50" id="whyUs">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+      <!-- Section Title -->
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Why Choose Us
+      </h2>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- ===== Card 1 ===== -->
+        <article
+          class="bg-white rounded-[10px] shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
+          <h3 class="text-2xl text-orange-500 font-semibold mb-3">
+            Expert Instructors
+          </h3>
+          <p class="text-gray-600">
+            Learn with fully qualified and patient instructors who guide you at your own pace and help you build confidence behind the wheel.
+          </p>
+        </article>
+
+        <!-- ===== Card 2 ===== -->
+        <article
+          class="bg-white rounded-[10px] shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
+          <h3 class="text-2xl text-orange-500 font-semibold mb-3">
+            Flexible Scheduling
+          </h3>
+          <p class="text-gray-600">
+            We work around your school, college, or work schedule so you can take lessons when it suits you best.
+          </p>
+        </article>
+
+        <!-- ===== Card 3 ===== -->
+        <article
+          class="bg-white rounded-[10px] shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
+          <h3 class="text-2xl text-orange-500 font-semibold mb-3">
+            High Pass Rate
+          </h3>
+          <p class="text-gray-600">
+            Our students consistently pass their driving tests on the first attempt thanks to structured lessons and proven techniques.
+          </p>
+        </article>
+
+        <!-- ===== Card 4 ===== -->
+        <article
+          class="bg-white rounded-[10px] shadow-lg p-6 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
+          <h3 class="text-2xl text-orange-500 font-semibold mb-3">
+            Modern & Safe Cars
+          </h3>
+          <p class="text-gray-600">
+            Learn in dual-control, fully maintained vehicles equipped for safety and comfort, giving you the confidence to master the road.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- ====================== REVIEWS ============================== -->
+  <!-- ============================================================ -->
+
+  <section class="mx-7 mt-7 review">
+
+    <!-- Elfsight Google Reviews Widget -->
+    <div class="elfsight-app-d463cab9-694d-44e6-979d-a3fe7d0971bc" data-elfsight-app-lazy></div>
+
+  </section>
+
+  <!-- ================= Footer (Injected via JS) ================= -->
+  <div class="footer"></div>
+
+  <!-- ============================================================ -->
+  <!-- ======================== SCRIPTS ============================ -->
+  <!-- ============================================================ -->
+
+  <!-- Elfsight -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  <!-- Navbar -->
+  <script defer src="js/navbar.js"></script>
+
+  <!-- Footer -->
+  <script src="js/footer.js"></script>
+
+  <!-- Hero Title Animation -->
+  <script defer src="js/title.js"></script>
+
+</body>
+
+</html>
